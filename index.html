@@ -3,64 +3,139 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HVAC Revenue Protection</title>
+<title>LM Revenue Support</title>
 <style>
-body{font-family:Arial,sans-serif;margin:0;line-height:1.6;background:#f5f7fa;color:#222}
-.hero{background:#1f2937;color:white;padding:80px 20px;text-align:center}
-.hero h1{font-size:48px;max-width:900px;margin:auto}
-.hero p{max-width:700px;margin:20px auto;font-size:20px;color:#d1d5db}
-.btn{display:inline-block;background:#f4b942;color:#111;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold}
-.section{padding:60px 20px;max-width:1000px;margin:auto}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{background:white;padding:20px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-footer{text-align:center;padding:40px;background:#111827;color:white}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,Arial,sans-serif;color:#1f2937;background:#ffffff;line-height:1.6}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;z-index:100}
+.logo{font-weight:700;font-size:22px}
+nav a{text-decoration:none;color:#374151;margin-left:20px}
+.btn{background:#f4b942;color:#111;padding:14px 24px;border-radius:30px;text-decoration:none;font-weight:700;display:inline-block}
+.hero{padding:100px 8%;text-align:center;background:linear-gradient(to bottom,#f8fafc,#ffffff)}
+.hero h1{font-size:56px;max-width:900px;margin:auto;line-height:1.1}
+.hero p{font-size:22px;color:#6b7280;max-width:800px;margin:25px auto}
+section{padding:80px 8%}
+h2{font-size:42px;margin-bottom:20px}
+.subtitle{color:#6b7280;max-width:700px;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.card{border:1px solid #e5e7eb;border-radius:16px;padding:24px;background:#fff;box-shadow:0 4px 10px rgba(0,0,0,.04)}
+.card h3{margin-bottom:10px}
+.timeline div,.faq div{margin-bottom:20px;padding:20px;border-left:4px solid #f4b942;background:#fafafa}
+.about{background:#f8fafc}
+.badges{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:30px}
+.badge{padding:18px;border:1px solid #dbe3ef;border-radius:12px;background:white}
+.cta{background:#0f172a;color:white;text-align:center}
+.cta h2{color:white}
+footer{text-align:center;padding:30px;color:#6b7280}
+@media(max-width:768px){
+.hero h1{font-size:38px}
+h2{font-size:32px}
+.hero p{font-size:18px}
+nav{padding:15px 5%}
+}
 </style>
 </head>
 <body>
 
+<nav>
+<div class="logo">LM Revenue Support</div>
+<div>
+<a href="#services">Services</a>
+<a href="#process">How It Works</a>
+<a href="#about">About</a>
+<a href="#faq">FAQ</a>
+</div>
+</nav>
+
 <section class="hero">
-<h1>Stop Losing Revenue to Missed Follow-Ups</h1>
-<p>Revenue Protection Support for Owner-Operated HVAC Companies. We help prevent lost jobs caused by missed calls, cold estimates, and inconsistent customer communication.</p>
-<a class="btn" href="#">Book a Discovery Call</a>
+<h1>Stop Losing Revenue to Missed Calls and Cold Estimates</h1>
+<p>Helping HVAC companies respond faster, follow up consistently, and convert more opportunities into booked jobs.</p>
+<a href="#" class="btn">Book a Discovery Call</a>
 </section>
 
-<section class="section">
-<h2>Revenue Leaks We Fix</h2>
-<div class="cards">
-<div class="card">Missed Calls & Lead Response Delays</div>
-<div class="card">Unfollowed Estimates</div>
-<div class="card">Customer Communication Gaps</div>
-<div class="card">Owner Overload During Busy Seasons</div>
+<section>
+<h2>Revenue Leaks We Help Prevent</h2>
+<p class="subtitle">Small communication gaps often turn into lost revenue opportunities.</p>
+<div class="grid">
+<div class="card"><h3>📞 Missed Calls</h3><p>Potential customers reach out and never hear back.</p></div>
+<div class="card"><h3>📋 Cold Estimates</h3><p>Quotes are sent but no one follows up.</p></div>
+<div class="card"><h3>💬 Communication Gaps</h3><p>Customers are left waiting for updates.</p></div>
+<div class="card"><h3>⚡ Owner Overload</h3><p>Busy seasons make consistent follow-up difficult.</p></div>
 </div>
 </section>
 
-<section class="section">
-<h2>What We Do</h2>
-<div class="cards">
-<div class="card"><strong>Lead Response</strong><br>Fast replies to incoming inquiries.</div>
-<div class="card"><strong>Estimate Follow-Up</strong><br>Keep quotes from going cold.</div>
-<div class="card"><strong>Customer Communication</strong><br>Consistent updates and follow-through.</div>
-<div class="card"><strong>Administrative Support</strong><br>Reduce operational bottlenecks.</div>
+<section id="services">
+<h2>Services</h2>
+<div class="grid">
+<div class="card"><h3>Lead Response Support</h3></div>
+<div class="card"><h3>Estimate Follow-Up</h3></div>
+<div class="card"><h3>Customer Communication</h3></div>
+<div class="card"><h3>Administrative Support</h3></div>
 </div>
 </section>
 
-<section class="section">
+<section id="process">
 <h2>How It Works</h2>
-<ol>
-<li>Book a Discovery Call</li>
-<li>Review Your Current Process</li>
-<li>Identify Revenue Leaks</li>
-<li>Implement Support & Tracking</li>
-</ol>
+<div class="timeline">
+<div><strong>1. Discovery Call</strong></div>
+<div><strong>2. Review Current Process</strong></div>
+<div><strong>3. Identify Revenue Leaks</strong></div>
+<div><strong>4. Implement Support</strong></div>
+</div>
 </section>
 
-<section class="hero" style="padding:60px 20px;">
-<h2>Find Out How Much Revenue Is Slipping Through the Cracks</h2>
-<a class="btn" href="#">Schedule a Call</a>
+<section id="about" class="about">
+<p style="letter-spacing:2px;color:#64748b;font-size:12px;">WHO'S BEHIND IT</p>
+<h2>Built by someone who's spent 4+ years inside high-volume customer support operations.</h2>
+
+<p class="subtitle">
+LM Revenue Support is founder-run by <strong>Loyumba Maibam</strong>.
+Over the past four years, Loyumba has worked across customer support and technical support environments where every interaction needed to be tracked, escalated, documented, and followed through consistently.
+</p>
+
+<p class="subtitle">
+That experience is now applied to helping owner-operated HVAC companies improve customer communication, estimate follow-up, and lead response—so opportunities don't go cold and revenue doesn't slip through the cracks.
+</p>
+
+<p class="subtitle">
+Many service businesses don't lose revenue because they're bad at their trade. They lose revenue because follow-up becomes difficult when the owner is juggling sales, operations, scheduling, and customer communication all at once.
+</p>
+
+<div class="badges">
+<div class="badge"><strong>Tech Mahindra</strong><br>Verizon Fios Technical Support</div>
+<div class="badge"><strong>Concentrix</strong><br>Customer Support Operations</div>
+<div class="badge"><strong>iEnergizer</strong><br>Customer Support Operations</div>
+</div>
+
+<h3 style="margin-top:40px;margin-bottom:20px;">Core Disciplines Brought Into The Service</h3>
+<div class="badges">
+<div class="badge">Customer Communication</div>
+<div class="badge">Escalation Management</div>
+<div class="badge">Process-Driven Operations</div>
+<div class="badge">Follow-Up Coordination</div>
+<div class="badge">SLA & Quality Standards</div>
+<div class="badge">Technical Troubleshooting</div>
+</div>
+</section>
+
+<section id="faq">
+<h2>Frequently Asked Questions</h2>
+<div class="faq">
+<div><strong>Do you replace my office staff?</strong><br>No. The goal is to support your existing process and reduce revenue leakage.</div>
+<div><strong>What size companies do you work with?</strong><br>Typically owner-operated HVAC businesses with 3–20 employees.</div>
+<div><strong>Do I need special software?</strong><br>No. We work with your current systems whenever possible.</div>
+<div><strong>How do we get started?</strong><br>Book a discovery call and we'll review your process.</div>
+</div>
+</section>
+
+<section class="cta">
+<h2>Find Out How Much Revenue Is Slipping Through The Cracks</h2>
+<p style="margin:20px 0">Book a free discovery call and let's identify where opportunities may be getting lost.</p>
+<a href="#" class="btn">Book a Discovery Call</a>
 </section>
 
 <footer>
-HVAC Revenue Protection • Built to help owner-operated HVAC businesses grow.
+LM Revenue Support • Revenue Protection & Follow-Up Support for HVAC Companies
 </footer>
 
 </body>
